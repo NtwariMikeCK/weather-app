@@ -6,6 +6,7 @@ By leveraging a robust weather API, the app delivers essential data such as temp
 all wrapped in a clean and intuitive interface.
 
 Access the live application here.
+https://www.myschoolwork.tech/weather-app/
 
 ## Features
 - Real-Time Weather Data: Get up-to-date weather information for any city.
