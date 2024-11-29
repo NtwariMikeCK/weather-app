@@ -68,8 +68,7 @@ steps:
    - **#Add this block for the Weather App**
    - **location /weather-app {**
        -**root /var/www/;**
-       -**index index.html;**
-       - **}**
+       -**index index.html;}**
 4. Check for syntax errors in your updated configuration:
    - **sudo nginx -t**
 5. If no errors are found, reload Nginx to apply the changes:
@@ -77,11 +76,11 @@ steps:
 
 ## Challenges Faced:
 
-**- API Integration:**
+- **API Integration:**
     Successfully handled API key security by avoiding exposure in the public repository.
-**- Error Handling:**
+- **Error Handling:**
     Implemented user-friendly messages for invalid inputs or failed API requests.
-**- Responsive Design:**
+- **Responsive Design:**
     Ensured the app works seamlessly on both desktop and mobile devices.
 
 ## Future Improvements:
