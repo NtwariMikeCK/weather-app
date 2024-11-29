@@ -18,6 +18,7 @@ https://www.myschoolwork.tech/weather-app/
 - Frontend: HTML, CSS, JavaScript
 - API: OpenWeatherMap API for fetching real-time weather data.
 - Deployment: Hosted using GitHub Pages.
+- Web-severs; NGINX
 
 ## How It Works
 
@@ -41,7 +42,7 @@ To run the app on your local machine:
 """ Clone the repository:
 bash
 Copy code
-git clone https://github.com/ntwarimike-ck/Weather-App.git
+git clone https://github.com/NtwariMikeCK/Weather-App.git
 Navigate to the project directory:
 bash
 Copy code
@@ -54,6 +55,9 @@ Open the index.html file in your browser.
 - The app uses the OpenWeatherMap API for weather data. To set it up:
 - Visit OpenWeatherMap to register and get an API key.
 - Replace the placeholder YOUR_API_KEY in the JavaScript file with your actual API key.
+**- Api-Endpoint = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=kigali&appid="**
+- Api-key = "5e14b4d50630fb643c75e93847a8bd33"
+  
 
 Deployment
 This application is deployed using GitHub Pages. You can access the live version here.
