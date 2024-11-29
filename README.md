@@ -40,14 +40,14 @@ Ensure you have the following installed:
 To run the app on your local machine:
 
 """ Clone the repository:
-bash
-Copy code
-git clone https://github.com/NtwariMikeCK/Weather-App.git
-Navigate to the project directory:
-bash
-Copy code
-cd Weather-App
-Open the index.html file in your browser.
+* bash
+* Copy code
+* git clone https://github.com/NtwariMikeCK/Weather-App.git
+- Navigate to the project directory:
+* bash
+* Copy code
+* cd Weather-App
+- Open the index.html file in your browser.
 """
 
 ### 2. API Key Setup
