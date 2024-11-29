@@ -10,9 +10,9 @@ https://www.myschoolwork.tech/weather-app/
 
 ## Features
 - **Real-Time Weather Data:** Get up-to-date weather information for any city.
-- **Search Functionality:* Enter the name of a city to retrieve its current weather.
-- Responsive Design: Optimized for desktop and mobile devices.
-- User-Friendly Interface: Clean, minimal, and intuitive layout for easy navigation.
+- **Search Functionality:** Enter the name of a city to retrieve its current weather.
+- **Responsive Design:** Optimized for desktop and mobile devices.
+- **User-Friendly Interface:** Clean, minimal, and intuitive layout for easy navigation.
 
 ## Technologies Used
 - **Frontend:** HTML, CSS, JavaScript
@@ -26,7 +26,7 @@ https://www.myschoolwork.tech/weather-app/
 - Type the name of the city in the search bar.
 - Press "Enter" or click the "Search" button to view weather details.
 ### Display Weather Information:
-- Current temperature (in Celsius or Fahrenheit).
+- Current temperature (in Celsius).
 - Weather conditions (e.g., cloudy, sunny, rainy).
 - Wind speed and humidity levels.
 
@@ -37,18 +37,16 @@ Ensure you have the following installed:
 1. A modern web browser (e.g., Chrome, Firefox).
 2. Running the App Locally
 
-To run the app on your local machine:
+**To run the app on your local machine:**
 
-""" Clone the repository:
-**bash**
-**Copy code
-* git clone https://github.com/NtwariMikeCK/Weather-App.git
+*Clone the repository:*
+
+- bash, Copy code
+*git clone https://github.com/NtwariMikeCK/Weather-App.git*
 - Navigate to the project directory:
-* bash
-* Copy code
-* cd Weather-App
+
+*cd Weather-App*
 - Open the index.html file in your browser.
-"""
 
 ### 2. API Key Setup
 
