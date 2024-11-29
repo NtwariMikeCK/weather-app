@@ -9,16 +9,16 @@ Access the live application here.
 https://www.myschoolwork.tech/weather-app/
 
 ## Features
-- Real-Time Weather Data: Get up-to-date weather information for any city.
-- Search Functionality: Enter the name of a city to retrieve its current weather.
+- **Real-Time Weather Data:** Get up-to-date weather information for any city.
+- **Search Functionality:* Enter the name of a city to retrieve its current weather.
 - Responsive Design: Optimized for desktop and mobile devices.
 - User-Friendly Interface: Clean, minimal, and intuitive layout for easy navigation.
 
 ## Technologies Used
-- Frontend: HTML, CSS, JavaScript
-- API: OpenWeatherMap API for fetching real-time weather data.
-- Deployment: Hosted using GitHub Pages.
-- Web-severs; NGINX
+- **Frontend:** HTML, CSS, JavaScript
+- **API:** OpenWeatherMap API for fetching real-time weather data.
+- **Deployment:** Hosted using GitHub Pages.
+- **Web-severs:** NGINX
 
 ## How It Works
 
