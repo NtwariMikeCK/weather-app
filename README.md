@@ -40,8 +40,8 @@ Ensure you have the following installed:
 To run the app on your local machine:
 
 """ Clone the repository:
-* bash
-* Copy code
+**bash**
+**Copy code
 * git clone https://github.com/NtwariMikeCK/Weather-App.git
 - Navigate to the project directory:
 * bash
