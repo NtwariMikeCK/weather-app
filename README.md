@@ -42,10 +42,9 @@ Ensure you have the following installed:
 *Clone the repository:*
 
 - bash, Copy code
-*git clone https://github.com/NtwariMikeCK/Weather-App.git*
+**1. git clone https://github.com/NtwariMikeCK/Weather-App.git**
 - Navigate to the project directory:
-
-*cd Weather-App*
+**2. cd Weather-App**
 - Open the index.html file in your browser.
 
 ### 2. API Key Setup
@@ -53,40 +52,44 @@ Ensure you have the following installed:
 - The app uses the OpenWeatherMap API for weather data. To set it up:
 - Visit OpenWeatherMap to register and get an API key.
 - Replace the placeholder YOUR_API_KEY in the JavaScript file with your actual API key.
-**- Api-Endpoint = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=kigali&appid="**
-- Api-key = "5e14b4d50630fb643c75e93847a8bd33"
+- **Api-Endpoint :** "https://api.openweathermap.org/data/2.5/weather?units=metric&q=kigali&appid="
+- **Api-key :** "5e14b4d50630fb643c75e93847a8bd33"
   
 
-Deployment
-This application is deployed using GitHub Pages. You can access the live version here.
+## Deployment
+This application is deployed using web-01 and web-02 servers with lb-01 to distribute traffic between the two servers.
 
-To deploy updates:
+steps:
+1. Upload your app files to the server, Using SCP or SFTP to copy your app code to the server.
+   - **scp -r /path/to/weather-app ubuntu@server-ip:/var/www/weather-app**
+2. Edit the Nginx configuration file using a text editor:
+   - **sudo vi /etc/nginx/sites-available/default**
+3. Add a new location block to serve your Weather App:
+   - ** # Add this block for the Weather App
+    location /weather-app {
+        root /var/www/;
+        index index.html;
+    }**
 
-Commit your changes:
-bash
-Copy code
-git add .
-git commit -m "Your commit message"
-Push to the main branch:
-bash
-Copy code
-git push origin main
-
+4. Check for syntax errors in your updated configuration:
+   - **sudo nginx -t**
+5. If no errors are found, reload Nginx to apply the changes:
+   - **sudo systemctl reload nginx**
 
 ## Challenges Faced
-- API Integration:
-Successfully handled API key security by avoiding exposure in the public repository.
-- Error Handling:
-Implemented user-friendly messages for invalid inputs or failed API requests.
-- Responsive Design:
-Ensured the app works seamlessly on both desktop and mobile devices.
+**- API Integration:**
+    Successfully handled API key security by avoiding exposure in the public repository.
+**- Error Handling:**
+    Implemented user-friendly messages for invalid inputs or failed API requests.
+**- Responsive Design:**
+    Ensured the app works seamlessly on both desktop and mobile devices.
 
 ## Future Improvements
-- Weather Forecast: Add a 7-day forecast feature for selected cities.
-- Location-Based Weather: Use the browser's geolocation API to show weather for the user's current location.
-= Advanced Visualizations: Include charts and graphs for temperature trends and other metrics.
+**- Weather Forecast:** Add a 7-day forecast feature for selected cities.
+**- Location-Based Weather:** Use the browser's geolocation API to show weather for the user's current location.
+**- Advanced Visualizations:** Include charts and graphs for temperature trends and other metrics.
 
 ## Credits
-- API: OpenWeatherMap
-- Icons: Weather icons provided by Flaticon (if applicable).
-- Deployment: Hosted via GitHub Pages.
+**- API:** OpenWeatherMap
+**- Icons:** Weather icons provided by Flaticon (if applicable).
+**- Deployment:** Hosted via GitHub Pages.
