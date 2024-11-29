@@ -41,11 +41,11 @@ Ensure you have the following installed:
 
 *Clone the repository:*
 
-- bash, Copy code
-**1. git clone https://github.com/NtwariMikeCK/Weather-App.git**
-- Navigate to the project directory:
-**2. cd Weather-App**
-- Open the index.html file in your browser.
+1. bash, Copy code:
+- **git clone https://github.com/NtwariMikeCK/Weather-App.git**
+2. Navigate to the project directory:
+- **cd Weather-App**
+3. Open the index.html file in your browser.
 
 ### 2. API Key Setup
 
@@ -69,7 +69,7 @@ steps:
    - **location /weather-app {**
        -**root /var/www/;**
        -**index index.html;**
-   - **}**
+       - **}**
 4. Check for syntax errors in your updated configuration:
    - **sudo nginx -t**
 5. If no errors are found, reload Nginx to apply the changes:
@@ -92,6 +92,5 @@ steps:
 
 ## Credits
 
-- **API:** OpenWeatherMap
-- **Icons:** Weather icons provided by Flaticon (if applicable).
-- **Deployment:** Hosted via GitHub Pages.
+- **API:** [OpenWeatherMap](https://openweathermap.org/api)
+- **Icons:** Weather icons provided by Flaticon.
