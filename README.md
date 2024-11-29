@@ -53,7 +53,7 @@ Ensure you have the following installed:
 - Visit OpenWeatherMap to register and get an API key.
 - Replace the placeholder YOUR_API_KEY in the JavaScript file with your actual API key.
 - **Api-Endpoint :** "https://api.openweathermap.org/data/2.5/weather?units=metric&q=kigali&appid="
-- **Api-key :** "5e14b4d50630fb643c75e93847a8bd33"
+- **Api-key :** **"5e14b4d50630fb643c75e93847a8bd33"**
   
 
 ## Deployment
@@ -65,18 +65,18 @@ steps:
 2. Edit the Nginx configuration file using a text editor:
    - **sudo vi /etc/nginx/sites-available/default**
 3. Add a new location block to serve your Weather App:
-   - ** # Add this block for the Weather App
-    location /weather-app {
-        root /var/www/;
-        index index.html;
-    }**
-
+   - **#Add this block for the Weather App**
+   - **location /weather-app {**
+       -**root /var/www/;**
+       -**index index.html;**
+   - **}**
 4. Check for syntax errors in your updated configuration:
    - **sudo nginx -t**
 5. If no errors are found, reload Nginx to apply the changes:
    - **sudo systemctl reload nginx**
 
-## Challenges Faced
+## Challenges Faced:
+
 **- API Integration:**
     Successfully handled API key security by avoiding exposure in the public repository.
 **- Error Handling:**
@@ -84,12 +84,14 @@ steps:
 **- Responsive Design:**
     Ensured the app works seamlessly on both desktop and mobile devices.
 
-## Future Improvements
-**- Weather Forecast:** Add a 7-day forecast feature for selected cities.
-**- Location-Based Weather:** Use the browser's geolocation API to show weather for the user's current location.
-**- Advanced Visualizations:** Include charts and graphs for temperature trends and other metrics.
+## Future Improvements:
+
+- **Weather Forecast:** Add a 7-day forecast feature for selected cities.
+- **Location-Based Weather:** Use the browser's geolocation API to show weather for the user's current location.
+- **Advanced Visualizations:** Include charts and graphs for temperature trends and other metrics.
 
 ## Credits
-**- API:** OpenWeatherMap
-**- Icons:** Weather icons provided by Flaticon (if applicable).
-**- Deployment:** Hosted via GitHub Pages.
+
+- **API:** OpenWeatherMap
+- **Icons:** Weather icons provided by Flaticon (if applicable).
+- **Deployment:** Hosted via GitHub Pages.
